@@ -24,28 +24,35 @@ div {
     align-items: center;
     flex-direction: column;
 }
-.bayan-body:hover div{
+
+.bayan-body:hover div {
     color: black;
 }
-.bayan-body:hover .pluse{
+
+.bayan-body:hover .pluse {
     display: block;
     animation: show 0.3s;
 }
-.button:hover .cross{
-display: block;
-animation: show 0.3s;
+
+.button:hover .cross {
+    display: block;
+    animation: show 0.3s;
 }
-.button:hover .pluse{
-     display: none !important;
+
+.button:hover .pluse {
+    display: none !important;
 }
-.button:hover .meme{
+
+.button:hover .meme {
     display: block !important;
     animation: show 0.3s;
 }
-.button:hover{
+
+.button:hover {
     cursor: pointer;
     height: auto;
 }
+
 .button {
     padding-top: 20px;
     display: flex;
@@ -56,49 +63,77 @@ animation: show 0.3s;
     width: 80%;
     height: 35px;
     text-align: left;
-  border-style: solid;
+    border-style: solid;
     border-width: 1px 0 0 0;
     margin-bottom: 5px;
 }
-.button .visible{
-   width: 100%;
+
+.button .visible {
+    width: 100%;
 }
 
 
-.visible{
-display: flex;
-justify-content: space-between;
+.visible {
+    display: flex;
+    justify-content: space-between;
 }
 
-.pluse{
-    display:none;
+.pluse {
+    display: none;
     width: 10px;
     height: 10px;
 }
-.cross{
-    display:none;
+
+.cross {
+    display: none;
     width: 15px;
     height: 15px;
 }
-.meme{
+
+.meme {
     max-width: 100%;
     max-height: 300px;
     display: none;
     padding-top: 20px;
-    
+
 }
 
-.meme-img{
+.meme-img {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-@keyframes show{
-    0%{
-        opacity:0;
+@keyframes show {
+    0% {
+        opacity: 0;
     }
+
     100% {
-        opacity:1;
+        opacity: 1;
     }
+}
+
+input[type="radio"]:checked+label .meme {
+    display: block !important;
+    animation: show 0.3s;
+    height: auto;
+}
+
+input[type="radio"]:checked+label.button {
+    height: auto;
+}
+
+input[type="radio"]:checked+label div {
+    color: black;
+}
+
+input[type="radio"]:checked+label .pluse {
+    display: none;
+    animation: show 0.3s;
+}
+
+input[type="radio"]:checked+label .cross {
+    display: block;
+    animation: show 0.3s;
 }
