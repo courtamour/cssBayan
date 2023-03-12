@@ -1,0 +1,96 @@
+body {
+    background-color: beige;
+
+}
+
+.title {
+    width: 80%;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+div {
+    color: blue;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.bayan-body {
+    padding-top: 20px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bayan-body:hover div{
+    color: black;
+}
+.bayan-body:hover .pluse{
+    display: block;
+    animation: show 0.3s;
+}
+.button:hover .cross{
+display: block;
+animation: show 0.3s;
+}
+.button:hover .pluse{
+     display: none !important;
+}
+.button:hover .meme{
+    display: block !important;
+    animation: show 0.3s;
+}
+.button:hover{
+    cursor: pointer;
+    height: auto;
+}
+.button {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    border-color: grey;
+    background-color: beige;
+    width: 80%;
+    height: 35px;
+    text-align: left;
+  border-style: solid;
+    border-width: 1px 0 0 0;
+    margin-bottom: 5px;
+}
+.button .visible{
+   width: 100%;
+}
+
+
+.visible{
+display: flex;
+justify-content: space-between;
+}
+
+.pluse{
+    display:none;
+    width: 10px;
+    height: 10px;
+}
+.cross{
+    display:none;
+    width: 15px;
+    height: 15px;
+}
+.meme{
+    max-width: 100%;
+    max-height: 300px;
+    display: none;
+    padding-top: 20px;
+    
+}
+
+.meme-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
