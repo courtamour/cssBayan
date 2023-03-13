@@ -31,12 +31,12 @@ div {
 
 .bayan-body:hover .pluse {
     display: block;
-    animation: show 0.3s;
+    animation: show 0.8s;
 }
 
 .button:hover .cross {
     display: block;
-    animation: show 0.3s;
+    animation: show 0.8s;
 }
 
 .button:hover .pluse {
@@ -45,7 +45,7 @@ div {
 
 .button:hover .meme {
     display: block !important;
-    animation: show 0.3s;
+    animation: show 0.8s;
 }
 
 .button:hover {
